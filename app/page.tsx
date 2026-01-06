@@ -6,6 +6,21 @@ const SoundCheck = () => {
   const otherButtonSoundRef = useRef<HTMLAudioElement | null>(null);
   const [activeRow, setActiveRow] = useState<number | null>(null);
 
+  // 👉 convert English numbers → Marathi numbers (ONLY addition)
+  const toMarathi = (num: number) =>
+    num
+      .toString()
+      .replace(/0/g, "०")
+      .replace(/1/g, "१")
+      .replace(/2/g, "२")
+      .replace(/3/g, "३")
+      .replace(/4/g, "४")
+      .replace(/5/g, "५")
+      .replace(/6/g, "६")
+      .replace(/7/g, "७")
+      .replace(/8/g, "८")
+      .replace(/9/g, "९");
+
   const playButtonSound = (index: number) => {
     buttonSoundRef.current?.play();
     setActiveRow(index);
@@ -65,10 +80,10 @@ const SoundCheck = () => {
             {[...Array(10)].map((_, index) => (
               <tr key={index} className="bg-[#9fdaeb] dark:bg-gray-800">
                 <td className="border-2 border-gray-400 w-10 px-2 md:px-1 py-1 text-center font-bold text-sm">
-                  {index + 1}
+                  {toMarathi(index + 1)}   {/* 👉 only this changed */}
                 </td>
 
-                <td className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center font-bold text-sm min-w-[110px] break-words">
+                <td className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center font-bold text-sm min-w[110px] break-words">
                   {index === 3 ? "बालवडकर लहु गजानन" : ""}
                 </td>
 
