@@ -67,9 +67,11 @@ const SoundCheck = () => {
                   {index + 1}
                 </td>
 
-                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center font-bold text-sm">
-                  {index === 3 ? "बालवडकर लहु गजानन" : ""}
-                </td>
+               
+                <td className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center font-bold text-sm">
+  {index === 3 ? "बालवडकर लहु गजानन" : ""}
+</td>
+
 
                 <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center">
                   {index === 3 ? (
