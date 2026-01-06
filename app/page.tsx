@@ -19,7 +19,7 @@ const SoundCheck = () => {
   return (
     <section className="bg-gray-100 dark:bg-gray-900 px-4 md:px-24 py-6 text-black dark:text-white">
       <h1 className="text-center text-xl font-bold mb-4 pt-2">
-        पुणे महानगरपालिका सार्वत्रिक निवडणूक - २०२६ डमी मतदान यंत्रa
+        पुणे महानगरपालिका सार्वत्रिक निवडणूक - २०२६ डमी मतदान यंत्र
       </h1>
 
       <div className="text-center mb-4 pt-2">
@@ -30,7 +30,7 @@ const SoundCheck = () => {
 
       <div className="text-center mb-4 pt-2">
         <span className="bg-yellow-200 text-green-800 font-bold px-4 py-2 inline-block rounded dark:bg-yellow-300">
-          भारतीय जनता पार्टी, प्रभाग क्र. ९ (ड) चे अधिकृत उमेदवार
+          भारतीय जनता पक्षाचे प्रभाग क्र. ९-ड चे अधिकृत उमेदवार
         </span>
       </div>
 
