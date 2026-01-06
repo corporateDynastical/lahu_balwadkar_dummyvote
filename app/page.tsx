@@ -42,7 +42,6 @@ const SoundCheck = () => {
                 अनु. क्र.
               </th>
 
-              {/* NAME HEADER */}
               <th className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center text-xs font-bold min-w-[110px]">
                 नाव
               </th>
@@ -69,7 +68,6 @@ const SoundCheck = () => {
                   {index + 1}
                 </td>
 
-                {/* NAME CELL */}
                 <td className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center font-bold text-sm min-w-[110px] break-words">
                   {index === 3 ? "बालवडकर लहु गजानन" : ""}
                 </td>
@@ -103,7 +101,7 @@ const SoundCheck = () => {
                     onClick={() =>
                       index === 3 ? playButtonSound(index) : playOtherButtonSound(index)
                     }
-                    className={`h-7 w-14 rounded-full ${
+                    className={`rounded-full w-10 h-6 md:w-14 md:h-7 ${
                       index === 3 ? "bg-green-500" : "bg-blue-700"
                     }`}
                   />
