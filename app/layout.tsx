@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Dummy Voting System",
-  description: "Dummy Vote For Ganesh Navthare",
+  description: "Dummy Vote For Lahu Balwadkar",
 };
 
 export default function RootLayout({
