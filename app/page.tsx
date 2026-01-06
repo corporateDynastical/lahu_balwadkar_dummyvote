@@ -35,15 +35,18 @@ const SoundCheck = () => {
       </div>
 
       <div className="overflow-x-hidden">
-        <table className="w-full border-2 border-gray-400 dark:border-gray-600 table-fixed">
+        <table className="w-full border-2 border-gray-400 dark:border-gray-600 table-auto md:table-fixed">
           <thead>
             <tr className="bg-gray-100 dark:bg-gray-800">
               <th className="border-2 border-gray-400 w-10 px-2 md:px-1 py-1 text-center text-xs font-bold">
                 अनु. क्र.
               </th>
-              <th className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center text-xs font-bold">
+
+              {/* NAME HEADER */}
+              <th className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center text-xs font-bold min-w-[110px]">
                 नाव
               </th>
+
               <th className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center text-xs font-bold">
                 फोटो
               </th>
@@ -62,16 +65,14 @@ const SoundCheck = () => {
           <tbody>
             {[...Array(10)].map((_, index) => (
               <tr key={index} className="bg-[#9fdaeb] dark:bg-gray-800">
-                {/* Small width col */}
                 <td className="border-2 border-gray-400 w-10 px-2 md:px-1 py-1 text-center font-bold text-sm">
                   {index + 1}
                 </td>
 
-               
-                <td className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center font-bold text-sm">
-  {index === 3 ? "बालवडकर लहु गजानन" : ""}
-</td>
-
+                {/* NAME CELL */}
+                <td className="border-2 border-gray-400 px-4 md:px-2 py-1 text-center font-bold text-sm min-w-[110px] break-words">
+                  {index === 3 ? "बालवडकर लहु गजानन" : ""}
+                </td>
 
                 <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center">
                   {index === 3 ? (
